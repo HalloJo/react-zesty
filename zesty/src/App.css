@@ -23,7 +23,6 @@ body {
 }
 
 .image-container {
-  background-color: orangered;
   width: 50vw;
   margin:0;
   position: relative;
@@ -35,10 +34,29 @@ h1 {
   line-height: 1.4;
 }
 
+figcaption {
+  font-size: 36px;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  color: white;
+  bottom: 20px;
+  margin: 0 auto;
+  width: 50%;
+  font-weight: 500;
+}
+
 p {
   position: fixed;
   bottom: 0;
   font-size: 24px;
   line-height: 1.2;
   margin: 0 20px 20px 20px;
+}
+
+img {
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  width: 50%;
 }

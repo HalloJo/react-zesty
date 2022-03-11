@@ -21,15 +21,18 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="title">
+      <header className="title">
         <h1>Zesty</h1>
         <p>
           A photography project <br /> by Ella Fieldling
         </p>
-      </div>
-      <div className="image-container">
+      </header>
+      <figure className="image-container">
+        <figcaption>
+          {currentImage + 1} / {images.length}
+        </figcaption>
         <img alt="" src={images[currentImage]} onClick={handleClick} />
-      </div>
+      </figure>
     </div>
   );
 };
