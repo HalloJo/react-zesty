@@ -20,20 +20,20 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <section className="App">
       <header className="title">
         <h1>Zesty</h1>
         <p>
           A photography project <br /> by Ella Fieldling
         </p>
       </header>
-      <figure className="image-container">
+      <figure>
         <figcaption>
           {currentImage + 1} / {images.length}
         </figcaption>
         <img alt="" src={images[currentImage]} onClick={handleClick} />
       </figure>
-    </div>
+    </section>
   );
 };
 
