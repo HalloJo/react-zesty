@@ -1,0 +1,32 @@
+aside {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #294910;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-bar {
+    display: grid;
+    grid-row-gap: 12px;
+}
+
+label {
+    color: #fbdd74
+}
+
+progress {
+    border: 1px solid #fbdd74;
+    height: 20px;
+    width: 400px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background: #fbdd74;
+}
+progress[value]::-webkit-progress-value {
+    background: #cf4ef0;
+}
