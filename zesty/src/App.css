@@ -56,9 +56,9 @@ p {
 
 img {
   height: 100vh;
+  width: 50%;
   object-fit: cover;
   position: fixed;
-  width: 50%;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -78,5 +78,17 @@ img {
   figure {
     flex-grow: 1;
     width: 100vw;
+  }
+  img {
+    width: 100%;
+  }
+  figcaption {
+    width: 100%;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  p {
+    position: relative;
   }
 }
