@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import Loader from "./components/Loader";
+import Loader from "./components/Loader/Loader";
+import Title from "./components/Title/Title";
 import cabbage from "./assets/image1.jpeg";
 import mango from "./assets/image2.jpeg";
 import fig from "./assets/image3.jpeg";
@@ -32,12 +33,7 @@ const App = () => {
 
   return (
     <section className="App">
-      <header className="title">
-        <h1>Zesty</h1>
-        <p>
-          A photography project <br /> by Ella Fieldling
-        </p>
-      </header>
+      <Title />
       <figure>
         <nav>
           <button className="back-button" onClick={handleClickPrevious}>

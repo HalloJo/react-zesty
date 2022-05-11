@@ -1,4 +1,4 @@
-import "../css/Loader.css";
+import "../Loader/Loader.css";
 
 const Loader = ({ calculatedWidth }) => {
   return (
