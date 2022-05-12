@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Figure, Navigation, Button, Figcaption, Image } from './Slideshow.styles';
+import { Figure, Navigation, Button, NextArrow, PreviousArrow, Figcaption, Image } from './Slideshow.styles';
 import Loader from "../Loader/Loader";
 import cabbage from "../../assets/image1.jpeg";
 import mango from "../../assets/image2.jpeg";
@@ -34,32 +34,10 @@ export const Slideshow = () => {
         <Figure>
         <Navigation>
             <Button className="back-button" onClick={handleClickPrevious}>
-            <svg
-                width="42"
-                height="60"
-                viewBox="0 0 42 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                d="M3.57749e-07 29.9998C3.76103e-07 28.4606 0.708885 27.0072 1.92178 26.0597L33.9218 1.05966C36.0978 -0.640396 39.2401 -0.254509 40.9401 1.92156C42.6402 4.09763 42.2543 7.23985 40.0782 8.9399L13.1216 29.9998L40.0782 51.0597C42.2543 52.7597 42.6402 55.9019 40.9401 58.078C39.2401 60.2541 36.0978 60.64 33.9218 58.9399L1.92178 33.9399C0.708885 32.9923 3.39395e-07 31.5389 3.57749e-07 29.9998Z"
-                fill="#E8E8E8"
-                />
-            </svg>
+                <PreviousArrow />
             </Button>
             <Button className="next-button" onClick={handleClickNext}>
-            <svg
-                width="42"
-                height="60"
-                viewBox="0 0 42 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                d="M42 30.0002C42 31.5394 41.2911 32.9928 40.0782 33.9403L8.07822 58.9403C5.90215 60.6404 2.75993 60.2545 1.05988 58.0784C-0.640177 55.9024 -0.25429 52.7602 1.92178 51.0601L28.8784 30.0002L1.92178 8.94034C-0.254288 7.24029 -0.640175 4.09807 1.05988 1.922C2.75993 -0.254069 5.90215 -0.639955 8.07822 1.0601L40.0782 26.0601C41.2911 27.0077 42 28.4611 42 30.0002Z"
-                fill="#E8E8E8"
-                />
-            </svg>
+                <NextArrow />
             </Button>
         </Navigation>
         {numLoaded < images.length && (

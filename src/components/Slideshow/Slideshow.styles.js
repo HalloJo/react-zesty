@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ReactComponent as RightArrow } from "../../assets/arrow-right.svg";
+import { ReactComponent as LeftArrow } from "../../assets/arrow-left.svg";
 
 export const Figure = styled.figure`
   width: 50vw;
@@ -10,6 +12,18 @@ export const Figure = styled.figure`
       flex-grow: 1;
       width: 100vw;
     }
+  }
+`;
+
+export const PreviousArrow = styled(LeftArrow)`
+  @media (max-width: 800px) {
+    width: 7.5vw;
+  }
+`;
+
+export const NextArrow = styled(RightArrow)`
+  @media (max-width: 800px) {
+    width: 7.5vw;
   }
 `;
 
