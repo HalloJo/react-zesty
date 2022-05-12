@@ -1,16 +1,16 @@
-
+import React from 'react';
 import Slideshow from "./components/Slideshow/Slideshow";
 import Title from "./components/Title/Title";
-import { GlobalStyle } from "./styles";
+import { Section, GlobalStyle } from "./styles";
 
 const App = () => {
   return (
     <>
     <GlobalStyle />
-    <section className="App">
+    <Section className="App">
       <Title />
       <Slideshow />
-    </section>
+    </Section>
     </>
   );
 };

@@ -1,4 +1,14 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+
+export const Section = styled.section`
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+`;
 
 export const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
@@ -17,16 +27,6 @@ export const GlobalStyle = createGlobalStyle`
         position: relative;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-    }
-
-    section {
-        display: flex;
-        height: 100vh;
-        justify-content: space-between;
-
-        @media (max-width: 800px) {
-            flex-direction: column;
-        }
     }
 
     .display {
