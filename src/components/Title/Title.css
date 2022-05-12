@@ -13,3 +13,13 @@ p {
     line-height: 1.2;
     margin: 0 20px 20px 20px;
   }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 80px;
+    }
+    p {
+      position: relative;
+    }
+
+  }
