@@ -7,6 +7,7 @@ import fig from "../../assets/image3.jpeg";
 import gaze from "../../assets/image4.jpeg";
 import peach from "../../assets/image5.jpeg";
 import avocado from "../../assets/image6.jpeg";
+import { useEffect } from 'react';
 
 const images = [cabbage, mango, fig, gaze, peach, avocado];
 
@@ -29,6 +30,12 @@ export const Slideshow = () => {
     const handleImageLoad = () => {
         setNumLoaded((numLoaded) => numLoaded + 1);
     };
+
+    useEffect(()=>{
+        setInterval(()=> {
+            handleClickNext()
+        }, 3000)
+    },[])
 
     return (
         <Figure>
