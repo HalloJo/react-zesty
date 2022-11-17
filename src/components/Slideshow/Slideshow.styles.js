@@ -3,15 +3,13 @@ import { ReactComponent as RightArrow } from "../../assets/arrow-right.svg";
 import { ReactComponent as LeftArrow } from "../../assets/arrow-left.svg";
 
 export const Figure = styled.figure`
-  width: 50vw;
-  margin: 0;
-  position: relative;
+  width: 100vw;
+  height: 100%;
 
-  @media (max-width: 800px) {
-    figure {
-      flex-grow: 1;
-      width: 100vw;
-    }
+  @media (min-width: 1024px) {
+    width: 50vw;
+    margin: 0;
+    position: relative;
   }
 `;
 
@@ -29,13 +27,17 @@ export const NextArrow = styled(RightArrow)`
 
 export const Navigation = styled.nav`
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   z-index: 4;
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 0 10px;
+
+  @media (min-width: 1024px) {
+    top: 50%;
+  }
 `;
 
 export const Button = styled.button`
